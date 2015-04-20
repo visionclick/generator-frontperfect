@@ -16,11 +16,15 @@
   "homepage": "https://github.com/visionclick/generator-vision",
   "bugs": "https://github.com/visionclick/generator-vision/issues",
   "author": {
-    "name": "Jose Carlos & Pablo Crossa",
-    "email": "josecarlos@visionclick.es & maquetacion@visionclick.es",
-    "web": "http://visionclick.es",
-    "twitter": "@jcarlosweb & @Pablocrs"
+    "name": "Jose Carlos",
+    "email": "josecarlos@visionclick.es",
+    "twitter": "@jcarlosweb"
   },
+  "contributors": [{
+  "name": "Pablo Crossa",
+  "email": "maquetacion@visionclick.es",
+  "twitter": "@Pablocrs"
+  }],
   "main": "app/index.js",
   "repository": {
     "type": "git",
