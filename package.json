@@ -1,5 +1,5 @@
 {
-  "name": "generator-yawa",
+  "name": "generator-vision",
   "version": "0.5.0",
   "description": "Scaffold out a front-end web app",
   "keywords": [
@@ -16,15 +16,15 @@
   "homepage": "https://github.com/p-j/generator-yawa",
   "bugs": "https://github.com/p-j/generator-yawa/issues",
   "author": {
-    "name": "Jeremie Parker",
-    "email": "npm@jeremie-parker.com",
-    "web": "http://jeremie-parker.com",
-    "twitter": "jeremie_parker"
+    "name": "Jose Carlos & Pablo Crossa",
+    "email": "josecarlos@visionclick.es & maquetacion@visionclick.es",
+    "web": "http://visionclick.es",
+    "twitter": "@jcarlosweb & @Pablocrs",
   },
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/p-j/generator-yawa.git"
+    "url": "git://github.com/visionclick/generator-yawa.git"
   },
   "scripts": {
     "test": "mocha --reporter spec"
