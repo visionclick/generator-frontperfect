@@ -19,7 +19,7 @@
     "name": "Jose Carlos & Pablo Crossa",
     "email": "josecarlos@visionclick.es & maquetacion@visionclick.es",
     "web": "http://visionclick.es",
-    "twitter": "@jcarlosweb & @Pablocrs",
+    "twitter": "@jcarlosweb & @Pablocrs"
   },
   "main": "app/index.js",
   "repository": {
