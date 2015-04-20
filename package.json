@@ -13,8 +13,8 @@
     "bootstrap",
     "assemble"
   ],
-  "homepage": "https://github.com/p-j/generator-yawa",
-  "bugs": "https://github.com/p-j/generator-yawa/issues",
+  "homepage": "https://github.com/visionclick/generator-vision",
+  "bugs": "https://github.com/visionclick/generator-vision/issues",
   "author": {
     "name": "Jose Carlos & Pablo Crossa",
     "email": "josecarlos@visionclick.es & maquetacion@visionclick.es",
@@ -24,7 +24,7 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/visionclick/generator-yawa.git"
+    "url": "git://github.com/visionclick/generator-vision.git"
   },
   "scripts": {
     "test": "mocha --reporter spec"
