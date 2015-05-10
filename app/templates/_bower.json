@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"dependencies": { <%
 		if (compassBootstrap) { %>
-			"sass-bootstrap": "^3.0.0", <%
+			"bootstrap-sass": "~3.3.4", <%
 		} %> <%
 		if (groundworkCSS) { %>
 			"groundwork": "^2.0.2", <%

@@ -156,7 +156,7 @@ module.exports = function (grunt) {
                 imagesDir: '<%%= yeoman.app %>/images',
                 javascriptsDir: '<%%= yeoman.app %>/scripts',
                 fontsDir: '<%%= yeoman.app %>/fonts',
-                importPath: '<%%= yeoman.app %>/bower_components',
+                importPath:<% if (compassBootstrap) { %>['<%%= yeoman.app %>/bower_components/','<%%= yeoman.app %>/bower_components/bootstrap-sass/assets/stylesheets/'],<% } else { %>'app/bower_components/',<% } %>
                 httpImagesPath: '/images',
                 httpGeneratedImagesPath: '/images/generated',
                 httpFontsPath: '/fonts',
@@ -350,7 +350,7 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
                         'fonts/{,*/}*.*'<% if (compassBootstrap) { %>,
-                        'bower_components/sass-bootstrap/fonts/*.*'<% } %><% if (groundworkCSS) { %>,
+                        'bower_components/bootstrap-sass/assets/fonts/*.*'<% } %><% if (groundworkCSS) { %>,
                         'bower_components/groundwork/fonts/**',
                         'bower_components/groundwork/images/**',
                         'bower_components/groundwork/js/libs/**'<% } %>
