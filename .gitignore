@@ -3,3 +3,4 @@ temp/
 *.sublime-project
 *.sublime-workspace
 npm-debug.log
+.idea

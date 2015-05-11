@@ -450,6 +450,9 @@ module.exports = function (grunt) {
             'concurrent:server',
             'autoprefixer',<% if (includeRequireJS) { %>
             'copy:scripts',<% } %>
+	          'assemble',
+		        'compass:server',
+		        'bless:server',
             'connect:livereload',
             'watch'
         ]);
