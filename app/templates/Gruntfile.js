@@ -481,7 +481,7 @@ module.exports = function (grunt) {
         'modernizr',<% } %>
         'copy:dist',
         'bless:dist',
-        'rev',
+        //'rev',
         'usemin',
         'htmlmin:deploy'
     ]);
