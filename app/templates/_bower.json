@@ -14,7 +14,8 @@
 		if (includeModernizr) { %>
 			"modernizr": "^2.6.2", <%
 		} %>
-		"jquery": "^1.10.2"
+		"jquery": "^1.10.2",
+		"lt-ie-9": "~0.1.0"
 	},
 	"devDependencies": {}
 }
