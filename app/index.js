@@ -290,6 +290,8 @@ YawaGenerator.prototype.app = function app() {
 	this.mkdir('app');
 	this.mkdir('app/scripts');
 	this.mkdir('app/styles');
+	this.mkdir('app/styles/components');
+	this.mkdir('app/styles/objects');
 	this.mkdir('app/images');
 	this.mkdir('app/fonts');
 	if (this.includeAssemble) {
