@@ -48,10 +48,7 @@ YawaGenerator.prototype.askFor = function askFor() {
 		type: 'list',
 		name: 'uiframework',
 		message: 'Would you use one of these fine UI Framework ?',
-		choices: [{
-			name: 'GroundworkCSS',
-			value: 'groundwork'
-		}, {
+		choices: [ {
 			name: 'Bootstrap for Sass',
 			value: 'bootstrap'
 		}, {
@@ -65,7 +62,7 @@ YawaGenerator.prototype.askFor = function askFor() {
 		choices: [{
 			name: 'RequireJS',
 			value: 'includeRequireJS',
-			checked: true
+			checked: false
 		}, {
 			name: 'Modernizr',
 			value: 'includeModernizr',
@@ -161,13 +158,13 @@ YawaGenerator.prototype.writeIndex = function writeIndex() {
 				'scripts/main.js'
 			]);
 
-			this.layoutFile = this.appendFiles({
-				html: this.layoutFile,
-				fileType: 'js',
-				optimizedPath: 'scripts/coffee.js',
-				sourceFileList: ['scripts/hello.js'],
-				searchPath: '.tmp'
-			});
+			//this.layoutFile = this.appendFiles({
+			//	html: this.layoutFile,
+			//	fileType: 'js',
+			//	optimizedPath: 'scripts/coffee.js',
+			//	sourceFileList: ['scripts/hello.js'],
+			//	searchPath: '.tmp'
+			//});
 		}
 
 		if (!this.includeRequireJS) {

@@ -350,7 +350,7 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
                         'fonts/{,*/}*.*'<% if (compassBootstrap) { %>,
-                        'bower_components/bootstrap-sass/assets/fonts/*.*'<% } %><% if (groundworkCSS) { %>,
+                        'bower_components/bootstrap-sass/assets/fonts/bootstrap/*.*'<% } %><% if (groundworkCSS) { %>,
                         'bower_components/groundwork/fonts/**',
                         'bower_components/groundwork/images/**',
                         'bower_components/groundwork/js/libs/**'<% } %>
