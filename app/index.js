@@ -136,6 +136,7 @@ YawaGenerator.prototype.h5bp = function h5bp() {
 YawaGenerator.prototype.mainStylesheet = function mainStylesheet() {
 	if (this.compassBootstrap) {
 		this.copy('bootstrap.scss', 'app/styles/main.scss');
+		this.copy('_helpers.scss', 'app/styles/_helpers.scss');
 	} else if (this.groundworkCSS) {
 		this.copy('groundwork.scss', 'app/styles/main.scss');
 		this.copy('groundwork_settings.scss', 'app/styles/_settings.scss');
