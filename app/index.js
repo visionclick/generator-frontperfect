@@ -41,15 +41,15 @@ YawaGenerator.prototype.askFor = function askFor() {
 	// welcome message
 	if (!this.options['skip-welcome-message']) {
 		console.log(this.yeoman);
-		console.log('Out of the box I include HTML5 Boilerplate and jQuery.');
+		console.log('Out of the box I include HTML5 Boilerplate and jQuery');
 	}
 
 	var prompts = [{
 		type: 'list',
 		name: 'uiframework',
-		message: 'Would you use one of these fine UI Framework ?',
+		message: 'Yo Homie! What framework do you want?',
 		choices: [ {
-			name: 'Bootstrap for Sass',
+			name: 'Official Bootstrap for Sass with bem and ocss',
 			value: 'bootstrap'
 		}, {
 			name: 'None',

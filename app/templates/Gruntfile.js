@@ -36,52 +36,38 @@ module.exports = function (grunt) {
                 files: ['<%%= yeoman.app %>/styles/{,*/}*.css'],
                 tasks: ['copy:styles', 'autoprefixer']
             },
-            livereload: {
-                options: {
-                    livereload: '<%%= connect.options.livereload %>'
-                },
+            data: {
                 files: [<% if (includeAssemble) { %>
-                    '<%%= yeoman.app %>/templates/**/*.hbs',<% } else { %>
+                     '<%%= yeoman.app %>/templates/**/*.hbs',<% } else { %>
                     '<%%= yeoman.app %>/*.html',<% } %>
-                    '{.tmp,<%%= yeoman.app %>}/styles/{,*/}*.css',
-                    '{.tmp,<%%= yeoman.app %>}/scripts/{,*/}*.js',
-                    '<%%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+					'.tmp/styles/{,*/}*.css',
+                    '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
+                    '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ],
                 tasks: [<% if (includeAssemble) { %>'assemble',<% } %> 'bless:server']
             }
         },
-        connect: {
-            options: {
-                port: 9000,
-                livereload: 35729,
-                // change this to '0.0.0.0' to access the server from outside
-                hostname: 'localhost'
-            },
-            livereload: {
-                options: {
-                    open: true,
-                    base: [
-                        '.tmp',
-                        '<%%= yeoman.app %>'
-                    ]
-                }
-            },
-            test: {
-                options: {
-                    base: [
-                        '.tmp',
-                        'test',
-                        '<%%= yeoman.app %>'
-                    ]
-                }
-            },
-            dist: {
-                options: {
-                    open: true,
-                    base: '<%%= yeoman.dist %>'
-                }
-            }
-        },
+		browserSync: {
+			dev: {
+				bsFiles: {
+					src : [
+						".tmp/{,*/}*.html",
+						".tmp/styles/{,*/}*.css",
+						".tmp/scripts/{,*/}*.js"
+					]
+				},
+				options: {
+					watchTask: true,
+						server: {
+						port: 3000,
+							baseDir: ['<%%= yeoman.app %>','.tmp']
+					},
+					ui: {
+						port: 3001
+					}
+				}
+			}
+		},
         clean: {
             dist: {
                 files: [{
@@ -446,15 +432,15 @@ module.exports = function (grunt) {
         }
 
         grunt.task.run([
-            'clean:server',
-            'concurrent:server',
-            'autoprefixer',<% if (includeRequireJS) { %>
-            'copy:scripts',<% } %>
-	          'assemble',
-		        'compass:server',
-		        'bless:server',
-            'connect:livereload',
-            'watch'
+			'clean:server',
+			'concurrent:server',
+			'autoprefixer',<% if (includeRequireJS) { %>
+			'copy:scripts',<% } %><% if (includeAssemble) { %>
+			'assemble',<% } %>
+			'compass:server',
+			'bless:server',
+			'browserSync',
+			'watch'
         ]);
     });
 
