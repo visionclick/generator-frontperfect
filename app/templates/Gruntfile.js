@@ -308,15 +308,15 @@ module.exports = function (grunt) {
         htmlmin: {
             dist: {
                 options: {
-                    removeCommentsFromCDATA: true,
+                    removeCommentsFromCDATA: false,
                     // https://github.com/yeoman/grunt-usemin/issues/44
-                    // collapseWhitespace: true,
-                    collapseBooleanAttributes: true,
+                    // collapseWhitespace: false,
+                    collapseBooleanAttributes: false,
                     removeAttributeQuotes: false,
-                    removeRedundantAttributes: true,
-                    useShortDoctype: true,
-                    removeEmptyAttributes: true,
-                    removeOptionalTags: true
+                    removeRedundantAttributes: false,
+                    useShortDoctype: false,
+                    removeEmptyAttributes: false,
+                    removeOptionalTags: false
                 },
                 files: [{
                     expand: true,
@@ -327,7 +327,7 @@ module.exports = function (grunt) {
             },
             deploy: {
                 options: {
-                    collapseWhitespace: true
+                    collapseWhitespace: false
                 },
                 files: [{
                     expand: true,
