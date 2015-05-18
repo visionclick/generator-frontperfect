@@ -61,16 +61,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 @import "helpers";
 
-.browsehappy {
-	margin: 0.2em 0;
-	background: #ccc;
-	color: #000;
-	padding: 0.2em 0;
-}
-
-/// TODO: browserhappy español con estilos
-
-/* Space out content a bit */
+/* REMOVE ME : */
 body {
 	padding-top: 20px;
 	padding-bottom: 20px;
