@@ -47,7 +47,7 @@ YawaGenerator.prototype.askFor = function askFor() {
 	var prompts = [{
 		type: 'list',
 		name: 'uiframework',
-		message: 'Yo Homie! What framework do you want?',
+		message: 'Yo Homie! What framework you want?',
 		choices: [ {
 			name: 'Official Bootstrap for Sass with bem and ocss',
 			value: 'bootstrap'
@@ -142,7 +142,7 @@ YawaGenerator.prototype.mainStylesheet = function mainStylesheet() {
 		this.copy('groundwork_settings.scss', 'app/styles/_settings.scss');
 		this.copy('groundwork_app.scss', 'app/styles/_app.scss');
 	} else {
-		this.copy('main.css', 'app/styles/main.css');
+		this.copy('main.scss', 'app/styles/main.scss');
 	}
 };
 
