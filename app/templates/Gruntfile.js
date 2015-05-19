@@ -64,7 +64,13 @@ module.exports = function (grunt) {
 					},
 					ui: {
 						port: 3001
-					}
+					},
+                    ghostMode: {
+                        clicks: true,
+                        forms: true,
+                        scroll: true
+                    },
+                    startPath: "/styleguide.html"
 				}
 			}
 		},

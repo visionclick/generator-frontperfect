@@ -1,0 +1,95 @@
+
+$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+
+.color-box{
+	height: 100px;
+	width: 100px;
+	float: left;
+	position: relative;
+	border: 1px solid #ccc;
+	background: #ffff;
+	margin: 0 20px;
+	overflow: hidden;
+	&:after{
+		content: '#{$brand-primary}';
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		text-align: center;
+		left: 0;
+		padding: 5px;
+		right: 0;
+		width: 100%;
+		color: white;
+		background: rgba(0,0,0,0.5cb85c)
+	}
+	&:before{
+		content: '$brand-primary';
+		width: 100%;
+		position: absolute;
+		top: -25px;
+		transition: top 0.3s ease;
+		font-size: 11px;
+		text-align: center;
+		left: 0;
+		padding: 5px;
+		right: 0;
+		width: 100%;
+		color: white;
+		background: rgba(0,0,0,0.5cb85c)
+	}
+	&:hover:before{
+		top: 0;
+	}
+}
+
+.color-box--primary{
+	background: $brand-primary;
+	&:before{
+		content: '$brand-primary';
+	}
+	&:after{
+		content: '#{$brand-primary}';
+	}
+}
+.color-box--success{
+	background: $brand-success;
+	&:before{
+		content: '$brand-success';
+	}
+	&:after{
+		content: '#{$brand-success}';
+	}
+}
+.color-box--info{
+	background: $brand-info;
+	&:before{
+		content: '$brand-info';
+	}
+	&:after{
+		content: '#{$brand-info}';
+	}
+}
+.color-box--warning{
+	background: $brand-warning;
+	&:before{
+		content: '$brand-warning';
+	}
+	&:after{
+		content: '#{$brand-warning}';
+	}
+}
+.color-box--danger{
+	background: $brand-danger;
+	&:before{
+		content: '$brand-danger';
+	}
+	&:after{
+		content: '#{$brand-danger}';
+	}
+}

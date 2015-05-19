@@ -136,7 +136,13 @@ YawaGenerator.prototype.mainStylesheet = function mainStylesheet() {
 	if (this.compassBootstrap) {
 		this.copy('bootstrap.scss', 'app/styles/main.scss');
 		this.copy('_helpers.scss', 'app/styles/_helpers.scss');
+
 		this.copy('_broswehappy.scss', 'app/styles/components/_browsehappy.scss');
+		this.copy('_styleguide.scss', 'app/styles/_styleguide.scss');
+
+		this.copy('styleguide.hbs', 'app/templates/pages/styleguide.hbs');
+		this.copy('styleguide.js', 'app/scripts/styleguide.js');
+
 	} else if (this.groundworkCSS) {
 		this.copy('groundwork.scss', 'app/styles/main.scss');
 		this.copy('groundwork_settings.scss', 'app/styles/_settings.scss');
