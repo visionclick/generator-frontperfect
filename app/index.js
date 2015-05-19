@@ -49,7 +49,7 @@ YawaGenerator.prototype.askFor = function askFor() {
 		name: 'uiframework',
 		message: 'Yo Homie! What framework you want?',
 		choices: [ {
-			name: 'Official Bootstrap for Sass with bem and ocss',
+			name: 'Bootstrap',
 			value: 'bootstrap'
 		}, {
 			name: 'None',
@@ -136,6 +136,11 @@ YawaGenerator.prototype.mainStylesheet = function mainStylesheet() {
 	if (this.compassBootstrap) {
 		this.copy('bootstrap.scss', 'app/styles/main.scss');
 		this.copy('_helpers.scss', 'app/styles/_helpers.scss');
+		this.copy('_textures.scss', 'app/styles/_textures.scss');
+
+		this.copy('_flex.scss', 'app/styles/lib/_flex.scss');
+		this.copy('_placeholders.scss', 'app/styles/lib/_placeholders.scss');
+		this.copy('_mixins.scss', 'app/styles/lib/_mixins.scss');
 
 		this.copy('_broswehappy.scss', 'app/styles/components/_browsehappy.scss');
 		this.copy('_styleguide.scss', 'app/styles/_styleguide.scss');
@@ -149,6 +154,15 @@ YawaGenerator.prototype.mainStylesheet = function mainStylesheet() {
 		this.copy('groundwork_app.scss', 'app/styles/_app.scss');
 	} else {
 		this.copy('main.scss', 'app/styles/main.scss');
+		this.copy('_helpers.scss', 'app/styles/_helpers.scss');
+		this.copy('_textures.scss', 'app/styles/_textures.scss');
+
+		this.copy('_flex.scss', 'app/styles/lib/_flex.scss');
+		this.copy('_placeholders.scss', 'app/styles/lib/_placeholders.scss');
+		this.copy('_mixins.scss', 'app/styles/lib/_mixins.scss');
+
+		this.copy('_broswehappy.scss', 'app/styles/components/_browsehappy.scss');
+		this.copy('_styleguide.scss', 'app/styles/_styleguide.scss');
 	}
 };
 

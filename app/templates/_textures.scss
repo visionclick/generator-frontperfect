@@ -1,0 +1,71 @@
+html, body {
+	min-height: 100%;
+}
+
+.main-container {
+
+}
+
+
+/// BACKGROUND COLORS
+
+.bg--primary {
+	background-color: $brand-primary !important;
+}
+
+.bg--white {
+	background-color: white !important;
+}
+
+.bg__info {
+	background-color: $brand-info !important;
+}
+
+.bg__warning {
+	background-color: $brand-warning !important;
+}
+
+.bg__danger {
+	background-color: $brand-danger !important;
+}
+
+
+/// BORDERS
+
+.border--primary {
+	border: 1px solid $border-color;
+}
+
+.border-sides--primary {
+	border-left: 1px solid $border-color;
+	border-right: 1px solid $border-color;
+}
+
+.border-ends--primary {
+	border-top: 1px solid $border-color;
+	border-bottom: 1px solid $border-color;
+}
+
+
+/// IMAGES
+
+.u-imgfull {
+	width: 100%;
+	max-width: 100%;
+}
+
+.u-imgmax{
+	max-width: 100%;
+}
+
+.js-cloak {
+	display: none !important;
+	visibility: hidden !important;
+	opacity: 0 !important;
+}
+
+/// FORMS
+
+textarea {
+	max-width: 100%;
+}

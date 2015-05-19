@@ -47,14 +47,27 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 //@import "bootstrap/popovers";
 //@import "bootstrap/carousel";
 
-/// Components
+
+// Lib
+@import "lib/flex";
+@import "lib/placeholders";
+@import "lib/mixins";
+
+
+// General
+@import "textures";
+
+
+// Components
 @import "components/_browsehappy";
-// Vendor
 
 
-/// Objects
+// Objects
 
+
+// Pages
 @import "styleguide";
+
 
 // Utility classes
 @import "bootstrap/utilities";
