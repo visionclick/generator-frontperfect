@@ -137,6 +137,8 @@ YawaGenerator.prototype.mainStylesheet = function mainStylesheet() {
 		this.copy('bootstrap.scss', 'app/styles/main.scss');
 		this.copy('_helpers.scss', 'app/styles/_helpers.scss');
 		this.copy('_textures.scss', 'app/styles/_textures.scss');
+		this.copy('_vars.scss', 'app/styles/_vars.scss');
+
 
 		this.copy('_flex.scss', 'app/styles/lib/_flex.scss');
 		this.copy('_placeholders.scss', 'app/styles/lib/_placeholders.scss');
