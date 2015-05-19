@@ -1,10 +1,12 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
-@import "vars";
 
 // Core variables and mixins
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
+
+// Page vars
+@import "vars";
 
 // Reset and dependencies
 @import "bootstrap/normalize";
