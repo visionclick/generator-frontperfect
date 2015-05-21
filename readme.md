@@ -13,7 +13,7 @@ This project depends on a few others that needs to be installed seperatly :
 
 ## Getting Started
 
-- Install: `npm install -g generator-yawa`
+- Install: `npm install -g generator-vision`
 - Run:  `yo yawa`
 - Run:  `npm install` (TODO: Auto install not working)
 - Run:  `bower install` (TODO: Auto install not working)
@@ -61,6 +61,7 @@ If you find a bug or woud like to see a new feature added, please fill an issue 
 
 YAWA Generator is brought to you by [Jeremie Parker](http://jeremie-parker.com) and made possible by the awsome work of all the opensource community around 
 Yeoman, Grunt, Bootstrap, Groundwork etc...
+
 
 ## License
 
