@@ -1,6 +1,6 @@
-# Yet Another Web App Generator
+# Generator Vision
 
-Yeoman generator that scaffolds out a front-end web app, based on the official [webapp generator](https://github.com/yeoman/generator-webapp).
+Yeoman generator that scaffolds out a front-end web app, based on the official and Yawa generator [webapp generator](https://github.com/yeoman/generator-webapp).
 
 ## Dependencies
 
@@ -20,6 +20,25 @@ This project depends on a few others that needs to be installed seperatly :
 - Run:  `grunt build` for building and `grunt server` for preview
 
 ## Scaffolding
+
+- app
+    - bower_components  (dependencies)
+    - fonts
+    - images
+    - scripts
+    - styles
+        - components
+        - lib
+        - objects
+        - _helpers.scss
+        - _styleguide.scss
+        - _textures.scss
+        - _vars.scss
+        - _main.scss
+    - templates
+        - layouts
+        - pages
+        - partials
 
 ## Features
 * Built-in preview server with Browser Sync
@@ -42,8 +61,6 @@ If you find a bug or woud like to see a new feature added, please fill an issue 
 
 YAWA Generator is brought to you by [Jeremie Parker](http://jeremie-parker.com) and made possible by the awsome work of all the opensource community around 
 Yeoman, Grunt, Bootstrap, Groundwork etc...
-
-Forked by [Pablo Crossa] {github.com/visionclick/}
 
 ## License
 
