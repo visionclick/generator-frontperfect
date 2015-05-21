@@ -28,8 +28,8 @@ This project depends on a few others that needs to be installed seperatly :
     - scripts
     - styles
         - components           (*"-c" Reusable bem modules*)
-        - lib                  (*"-o" Mixins, Placeholders, Animations...*)
-        - objects              (*may be used in any number of unrelated contexts to the one*)
+        - lib                  (*Mixins, Placeholders, Animations...*)
+        - objects              (*"-o" may be used in any number of unrelated contexts to the one*)
         - _helpers.scss        (*Inuitcss helper to controll padding and margin with !important*)
         - _styleguide.scss     (*Bootstrap styleguide*)
         - _textures.scss       (*Theme and design stuff*)
