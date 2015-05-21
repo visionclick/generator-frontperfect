@@ -62,6 +62,7 @@ If you find a bug or woud like to see a new feature added, please fill an issue 
 YAWA Generator is brought to you by [Jeremie Parker](http://jeremie-parker.com) and made possible by the awsome work of all the opensource community around 
 Yeoman, Grunt, Bootstrap, Groundwork etc...
 
+Forked by [Vision Click] (https://github.com/visionclick)
 
 ## License
 
