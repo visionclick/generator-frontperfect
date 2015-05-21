@@ -27,18 +27,23 @@ This project depends on a few others that needs to be installed seperatly :
     - images
     - scripts
     - styles
-        - components
-        - lib
-        - objects
-        - _helpers.scss
-        - _styleguide.scss
-        - _textures.scss
-        - _vars.scss
-        - _main.scss
+        - components           (*"-c" Reusable bem modules*)
+        - lib                  (*"-o" Mixins, Placeholders, Animations...*)
+        - objects              (*may be used in any number of unrelated contexts to the one*)
+        - _helpers.scss        (*Inuitcss helper to controll padding and margin with !important*)
+        - _styleguide.scss     (*Bootstrap styleguide*)
+        - _textures.scss       (*Theme and design stuff*)
+        - _vars.scss           (*Variables*)
+        - _main.scss           (*Import the whole project*)
     - templates
         - layouts
         - pages
         - partials
+
+# Workflow
+
+- [Namespaces] (http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
+- [Bem] (https://gist.github.com/ingdir/0b211b9253c376f9cfa5)
 
 ## Features
 * Built-in preview server with Browser Sync
