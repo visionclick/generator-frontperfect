@@ -21,9 +21,9 @@
     "twitter": "@jcarlosweb"
   },
   "contributors": [{
-  "name": "Pablo Crossa",
-  "email": "maquetacion@visionclick.es",
-  "twitter": "@Pablocrs"
+    "name": "Pablo Crossa",
+    "email": "maquetacion@visionclick.es",
+    "twitter": "@Pablocrs"
   }],
   "main": "app/index.js",
   "repository": {
