@@ -9,15 +9,12 @@
 // General
 @import "textures";
 
-
-// Components
-@import "components/_browsehappy";
-
-
 // Objects
 
 
-// Pages
+// Components
+@import "components/browsehappy";
 
 
+@import "components/shame";
 @import "helpers";

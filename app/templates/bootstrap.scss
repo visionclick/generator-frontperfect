@@ -62,15 +62,15 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "textures";
 
 
-// Components
-@import "components/_browsehappy";
-
-
 // Objects
 
 
-// Pages
-@import "styleguide";
+// Components
+@import "components/browsehappy";
+
+
+@import "components/shame";
+@import "helpers";
 
 
 // Utility classes

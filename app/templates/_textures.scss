@@ -1,9 +1,7 @@
+
+
 html, body {
 	min-height: 100%;
-}
-
-.main-container {
-
 }
 
 
@@ -17,15 +15,15 @@ html, body {
 	background-color: white !important;
 }
 
-.bg__info {
+.bg--info {
 	background-color: $brand-info !important;
 }
 
-.bg__warning {
+.bg--warning {
 	background-color: $brand-warning !important;
 }
 
-.bg__danger {
+.bg--danger {
 	background-color: $brand-danger !important;
 }
 
